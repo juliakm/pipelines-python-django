@@ -24,10 +24,12 @@ steps:
 
 - task: PythonScript@0
   inputs:
-    targetType: 'inline'
-    script: |
-      print('Hello world 1')
-      print('Hello world 2')
+    script:
+      pip install -r requirements.txt
+    #targetType: 'inline'
+    #script: |
+     # print('Hello world 1')
+      #print('Hello world 2')
 
 
 
